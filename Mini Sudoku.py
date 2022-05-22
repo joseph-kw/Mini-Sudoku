@@ -1,4 +1,4 @@
-## Question 1: Filling Rows
+## Filling Rows
 SIZE = 4
 board1 = [[1, 0, 3, 0], [3, 0, 0, 2], [4, 3, 2, 1], [0, 0, 0, 3]]
 board2 = [[0, 1, 3, 2], [2, 0, 1, 0], [1, 0, 0, 3], [3, 4, 2, 1]]
@@ -13,7 +13,7 @@ def fill_row(board):
                     checkTF = True
     return checkTF
 
-## Question 2: Filling Columns
+## Filling Columns
 def fill_col(board):
     lst = []
     countZ = 0
@@ -39,7 +39,7 @@ def fill_col(board):
         idx+=1
     return checkTF
 
-## Question 3: Filling Sections
+## Filling Sections
 def fill_section(board):
     a = 0
     b = 2
@@ -91,7 +91,7 @@ def fill_section(board):
                 check = True
     return check
 
-## Question 4: Filling the Board
+## Filling the Board
 def fill_board(board):
     fillable = True  # indicate if a board is still fillable
     while fillable == True:
